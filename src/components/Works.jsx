@@ -1,15 +1,67 @@
 import React from "react";
 import styled from "styled-components";
 
+const data = [
+  "Designed by Figma",
+  "Web Design",
+  "Web Development",
+  "Video Editing",
+  "Social Media"
+];
+
 const Section = styled.div`
   height: 100vh;
-//   background-color: #85e333;
   scroll-snap-align: center;
+  display: flex;
+  justify-content: center;
+`
+const Container = styled.div`
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+`
+
+const Left = styled.div`
+ flex: 1;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+`
+const List = styled.ul`
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`
+const ListItem = styled.li`
+  font-size: 54px;
+  font-weight: bold;
+  cursor: pointer;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+
+`
+const Right = styled.div`
+  flex: 1;
 `
 
 const Works = () => {
     return(
-        <Section>Works</Section>
+        <Section>
+          <Container>
+             <Left>
+              <List>
+                {data.map((item)=>(
+                  <ListItem key={item}> {item} </ListItem>
+                ))}
+                
+              </List>
+             </Left>
+             <Right>
+
+             </Right>
+          </Container>
+        </Section>
     )
 }
 
