@@ -91,9 +91,9 @@
           <Left>
             <Form ref={ref} onSubmit={handleSubmit}>
               <Title>Contact Me</Title>
-              <Input placeholder='Name' name="name"/>
-              <Input placeholder='Email' name="email"/>
-              <Input placeholder='Type Your Message' name="message" rows={10}/>
+              <Input placeholder='Name' name="name" required />
+              <Input placeholder='Email' name="email" required />
+              <Input placeholder='Type Your Message' name="message" rows={10} />
               <Button type="submit"> Send </Button>
               {success && "Your message has been successfully sent!! "}
             </Form>
