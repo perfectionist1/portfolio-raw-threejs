@@ -15,7 +15,7 @@ const Test = () => {
     <Container>
       <Canvas>
         <OrbitControls enableZoom={false} autoRotate/>
-        <ambientLight intensity={1} />
+        <ambientLight intensity={2} />
         <directionalLight position={[3,2,1]} />
         <Cube />
       </Canvas>

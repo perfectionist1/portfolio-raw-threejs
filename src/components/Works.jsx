@@ -2,11 +2,11 @@ import React from "react";
 import styled from "styled-components";
 
 const data = [
-  "Designed by Figma",
+  "Figma Design",
   "Web Design",
   "Web Development",
   "Video Editing",
-  "Social Media"
+  "Fillable PDF"
 ];
 
 const Section = styled.div`
