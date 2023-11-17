@@ -8,7 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vite build && gh-pages -d dist"
+    "deploy": "vite build && gh-pages -d dist",
+    "copy": "cp ./CNAME ./build/CNAME",
+    "predeploy": "yarn build && yarn copy"
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
